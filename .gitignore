@@ -42,3 +42,6 @@ temp/
 
 # Claude AI files
 .claude/
+
+# Archive directory
+archive/
