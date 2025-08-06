@@ -1,0 +1,16 @@
+{
+  "title": "OSFI CAR Regulatory Analysis Questions",
+  "description": "Sample questions for testing OSFI CAR batch analysis",
+  "questions": [
+    "What is the definition of default and the associated capital treatment of defaulted exposure?",
+    "What is the minimum Common Equity Tier 1 capital ratio requirement?",
+    "How do you calculate risk-weighted assets for credit risk?",
+    "What are the components of Tier 1 capital?",
+    "What are the Basel III leverage ratio requirements?"
+  ],
+  "metadata": {
+    "created": "2024-08-05",
+    "topic": "OSFI CAR Regulations",
+    "complexity": "mixed"
+  }
+}
