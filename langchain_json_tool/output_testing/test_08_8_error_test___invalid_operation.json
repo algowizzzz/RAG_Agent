@@ -1,0 +1,53 @@
+{
+  "test_id": 8,
+  "test_name": "8. Error Test - Invalid Operation",
+  "test_params": {
+    "operation": "invalid_operation"
+  },
+  "expected": "Should return error for invalid operation",
+  "start_time": "2025-08-06T20:23:26.922067",
+  "end_time": "2025-08-06T20:23:26.922143",
+  "duration_seconds": 7.6e-05,
+  "status": "UNKNOWN",
+  "passed": false,
+  "response": {
+    "status": "ERROR",
+    "error_type": "UnexpectedError",
+    "message": "1 validation error for JSONSearchInput\noperation\n  Value error, Operation must be one of: ['discover', 'get_full_file', 'get_single_item', 'search_metadata', 'search_content'] [type=value_error, input_value='invalid_operation', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.11/v/value_error",
+    "details": "Operation: invalid_operation",
+    "suggestion": "Check input parameters and try again",
+    "available_operations": [
+      "discover - List all files",
+      "get_full_file - Get complete file content",
+      "get_single_item - Get specific page/sheet",
+      "search_metadata - Search file metadata",
+      "search_content - Search document text"
+    ],
+    "example_usage": {
+      "discover_files": {
+        "operation": "discover"
+      },
+      "get_pdf_content": {
+        "operation": "get_full_file",
+        "filename": "document.pdf"
+      },
+      "get_specific_page": {
+        "operation": "get_single_item",
+        "filename": "document.pdf",
+        "page": 5
+      },
+      "search_text": {
+        "operation": "search_content",
+        "search_value": "capital requirements"
+      },
+      "search_metadata": {
+        "operation": "search_metadata",
+        "search_value": "2025-08-06",
+        "field": "processing_timestamp",
+        "search_type": "partial"
+      }
+    }
+  },
+  "error_info": null,
+  "summary": null
+}

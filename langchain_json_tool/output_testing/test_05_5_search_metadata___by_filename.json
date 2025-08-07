@@ -1,0 +1,903 @@
+{
+  "test_id": 5,
+  "test_name": "5. Search Metadata - By Filename",
+  "test_params": {
+    "operation": "search_metadata",
+    "search_value": "car24_chpt1_0.pdf",
+    "field": "source_file",
+    "search_type": "exact"
+  },
+  "expected": "Should find metadata for PDF file",
+  "start_time": "2025-08-06T20:23:26.918904",
+  "end_time": "2025-08-06T20:23:26.919954",
+  "duration_seconds": 0.00105,
+  "status": "SUCCESS",
+  "passed": true,
+  "response": {
+    "summary": {
+      "operation": "Metadata Search Results",
+      "status": "SUCCESS",
+      "input_parameters": {
+        "operation": "search_metadata",
+        "json_file_path": "../Fetch_data/unified_results.json",
+        "filename": null,
+        "search_value": "car24_chpt1_0.pdf",
+        "field": "source_file",
+        "search_type": "exact",
+        "page": null,
+        "sheet": null,
+        "chunk": null
+      },
+      "summary": "Found 52 matches for 'car24_chpt1_0.pdf'"
+    },
+    "detailed_results": {
+      "status": "success",
+      "search_value": "car24_chpt1_0.pdf",
+      "field": "source_file",
+      "search_type": "exact",
+      "total_results": 52,
+      "results": [
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 0,
+            "chunk_index": 0,
+            "chunk_size_chars": 2336,
+            "chunk_size_words": 346,
+            "chunk_hash": "3b0753cf24a051986676e6586d960ba7",
+            "processing_timestamp": "2025-08-06T18:14:05.817785"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 1 \nGuid..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 1,
+            "chunk_index": 1,
+            "chunk_size_chars": 941,
+            "chunk_size_words": 132,
+            "chunk_hash": "f8a08377fcd3213017a58fa40008e908",
+            "processing_timestamp": "2025-08-06T18:14:05.817816"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 2 \nChap..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 2,
+            "chunk_index": 2,
+            "chunk_size_chars": 2552,
+            "chunk_size_words": 178,
+            "chunk_hash": "31817d2e9b643b8179c700e6963cc416",
+            "processing_timestamp": "2025-08-06T18:14:05.817832"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 3 \n \nTa..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 3,
+            "chunk_index": 3,
+            "chunk_size_chars": 2202,
+            "chunk_size_words": 317,
+            "chunk_hash": "078dfe2e69f790cf355c087a1dd5977a",
+            "processing_timestamp": "2025-08-06T18:14:05.817846"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 4 \nChap..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 4,
+            "chunk_index": 4,
+            "chunk_size_chars": 1945,
+            "chunk_size_words": 305,
+            "chunk_hash": "7b7ff2ba2d78639d14943cbbcd257638",
+            "processing_timestamp": "2025-08-06T18:14:05.817861"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 5 \n6. T..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 5,
+            "chunk_index": 5,
+            "chunk_size_chars": 3049,
+            "chunk_size_words": 486,
+            "chunk_hash": "b05e60fea345cc2992ba90685844a03a",
+            "processing_timestamp": "2025-08-06T18:14:05.817875"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 6 \ne. R..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 6,
+            "chunk_index": 6,
+            "chunk_size_chars": 2476,
+            "chunk_size_words": 380,
+            "chunk_hash": "053fd0f86eb6b719f8362d150b813979",
+            "processing_timestamp": "2025-08-06T18:14:05.817889"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 7 \n \na...."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 7,
+            "chunk_index": 7,
+            "chunk_size_chars": 3111,
+            "chunk_size_words": 473,
+            "chunk_hash": "77c10ce1f36be5173cf484962ce55d7e",
+            "processing_timestamp": "2025-08-06T18:14:05.817903"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 8 \n \n1...."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 8,
+            "chunk_index": 8,
+            "chunk_size_chars": 2625,
+            "chunk_size_words": 396,
+            "chunk_hash": "a1ff9e52c78b9e378e3b7b1f60d398a9",
+            "processing_timestamp": "2025-08-06T18:14:05.817916"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 9 \n26. ..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 9,
+            "chunk_index": 9,
+            "chunk_size_chars": 2655,
+            "chunk_size_words": 399,
+            "chunk_hash": "db1f01c4d7fad25c0cccd8e2aa2ca424",
+            "processing_timestamp": "2025-08-06T18:14:05.817931"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 10 \n30...."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 10,
+            "chunk_index": 10,
+            "chunk_size_chars": 2499,
+            "chunk_size_words": 389,
+            "chunk_hash": "4c4c5db6eba89e2824bdbea4ff52e9c0",
+            "processing_timestamp": "2025-08-06T18:14:05.817944"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 11 \ne. ..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 11,
+            "chunk_index": 11,
+            "chunk_size_chars": 1802,
+            "chunk_size_words": 264,
+            "chunk_hash": "752de4c8d5ccf53ebbcdc3f35948cffa",
+            "processing_timestamp": "2025-08-06T18:14:05.817960"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 12 \nTab..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 12,
+            "chunk_index": 12,
+            "chunk_size_chars": 3081,
+            "chunk_size_words": 454,
+            "chunk_hash": "fad20fe43bd626df56be976260b70d8b",
+            "processing_timestamp": "2025-08-06T18:14:05.817972"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 13 \n44...."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 13,
+            "chunk_index": 13,
+            "chunk_size_chars": 3354,
+            "chunk_size_words": 509,
+            "chunk_hash": "6b05e001e47124887e3fc597f9993ada",
+            "processing_timestamp": "2025-08-06T18:14:05.817986"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 14 \nrel..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 14,
+            "chunk_index": 14,
+            "chunk_size_chars": 3680,
+            "chunk_size_words": 551,
+            "chunk_hash": "8287f979a1adf23a2b21d636963db297",
+            "processing_timestamp": "2025-08-06T18:14:05.817999"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 15 \n51...."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 15,
+            "chunk_index": 15,
+            "chunk_size_chars": 3014,
+            "chunk_size_words": 437,
+            "chunk_hash": "b82103f77a1827836cd2b53947c4e5bc",
+            "processing_timestamp": "2025-08-06T18:14:05.818013"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 16 \ncir..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 16,
+            "chunk_index": 16,
+            "chunk_size_chars": 3880,
+            "chunk_size_words": 566,
+            "chunk_hash": "083007eb4f6ca3e3001c398ec09c6225",
+            "processing_timestamp": "2025-08-06T18:14:05.818024"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 17 \napp..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 17,
+            "chunk_index": 17,
+            "chunk_size_chars": 4182,
+            "chunk_size_words": 623,
+            "chunk_hash": "907ff8b9b57dce5feb94f797c158ef69",
+            "processing_timestamp": "2025-08-06T18:14:05.818037"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 18 \napp..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 18,
+            "chunk_index": 18,
+            "chunk_size_chars": 2718,
+            "chunk_size_words": 424,
+            "chunk_hash": "35b4c6b15ee0efcef0442a3a3317034e",
+            "processing_timestamp": "2025-08-06T18:14:05.818050"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 19 \nabi..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 19,
+            "chunk_index": 19,
+            "chunk_size_chars": 3325,
+            "chunk_size_words": 529,
+            "chunk_hash": "fc56c8ed7e65a804f99fa211f3c1d984",
+            "processing_timestamp": "2025-08-06T18:14:05.818064"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 20 \n70...."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 20,
+            "chunk_index": 20,
+            "chunk_size_chars": 1438,
+            "chunk_size_words": 202,
+            "chunk_hash": "ac270ebe1d22fe52e5d5b4dc17fc43b8",
+            "processing_timestamp": "2025-08-06T18:14:05.818076"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 21 \nTab..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 21,
+            "chunk_index": 21,
+            "chunk_size_chars": 3029,
+            "chunk_size_words": 424,
+            "chunk_hash": "9133a4737e5533abeb8d253c6e119ddd",
+            "processing_timestamp": "2025-08-06T18:14:05.818089"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 22 \nAnn..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 22,
+            "chunk_index": 22,
+            "chunk_size_chars": 3438,
+            "chunk_size_words": 521,
+            "chunk_hash": "7699b0e165228e6d053042e9729a096d",
+            "processing_timestamp": "2025-08-06T18:14:05.818103"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 23 \nmar..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 23,
+            "chunk_index": 23,
+            "chunk_size_chars": 3171,
+            "chunk_size_words": 469,
+            "chunk_hash": "94c640abfde47f8673ce159d72abac0b",
+            "processing_timestamp": "2025-08-06T18:14:05.818119"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 24 \nins..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 24,
+            "chunk_index": 24,
+            "chunk_size_chars": 3036,
+            "chunk_size_words": 420,
+            "chunk_hash": "021c815f4208fa9bb262c0ff223bc07a",
+            "processing_timestamp": "2025-08-06T18:14:05.818131"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 25 \nlev..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "source_file": "car24_chpt1_0.pdf",
+            "source_path": "/Users/saadahmed/Desktop/Apps/pdf/combined_parser/combine/car24_chpt1_0.pdf",
+            "page_number": 25,
+            "chunk_index": 25,
+            "chunk_size_chars": 605,
+            "chunk_size_words": 94,
+            "chunk_hash": "ba285e03d42ecd8eda90c97f016e7f32",
+            "processing_timestamp": "2025-08-06T18:14:05.818144"
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 26 \nAnn..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 0,
+            "page_number": 0,
+            "chunk_size_chars": 2336,
+            "id": "car24_chpt1_0.pdf_chunk_0000",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 346,
+            "metadata": {
+              "chunk_index": 0,
+              "page_number": 0,
+              "chunk_size_chars": 2336
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 1 \nGuid..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 1,
+            "page_number": 1,
+            "chunk_size_chars": 941,
+            "id": "car24_chpt1_0.pdf_chunk_0001",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 132,
+            "metadata": {
+              "chunk_index": 1,
+              "page_number": 1,
+              "chunk_size_chars": 941
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 2 \nChap..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 2,
+            "page_number": 2,
+            "chunk_size_chars": 2552,
+            "id": "car24_chpt1_0.pdf_chunk_0002",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 178,
+            "metadata": {
+              "chunk_index": 2,
+              "page_number": 2,
+              "chunk_size_chars": 2552
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 3 \n \nTa..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 3,
+            "page_number": 3,
+            "chunk_size_chars": 2202,
+            "id": "car24_chpt1_0.pdf_chunk_0003",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 317,
+            "metadata": {
+              "chunk_index": 3,
+              "page_number": 3,
+              "chunk_size_chars": 2202
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 4 \nChap..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 4,
+            "page_number": 4,
+            "chunk_size_chars": 1945,
+            "id": "car24_chpt1_0.pdf_chunk_0004",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 305,
+            "metadata": {
+              "chunk_index": 4,
+              "page_number": 4,
+              "chunk_size_chars": 1945
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 5 \n6. T..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 5,
+            "page_number": 5,
+            "chunk_size_chars": 3049,
+            "id": "car24_chpt1_0.pdf_chunk_0005",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 486,
+            "metadata": {
+              "chunk_index": 5,
+              "page_number": 5,
+              "chunk_size_chars": 3049
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 6 \ne. R..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 6,
+            "page_number": 6,
+            "chunk_size_chars": 2476,
+            "id": "car24_chpt1_0.pdf_chunk_0006",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 380,
+            "metadata": {
+              "chunk_index": 6,
+              "page_number": 6,
+              "chunk_size_chars": 2476
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 7 \n \na...."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 7,
+            "page_number": 7,
+            "chunk_size_chars": 3111,
+            "id": "car24_chpt1_0.pdf_chunk_0007",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 473,
+            "metadata": {
+              "chunk_index": 7,
+              "page_number": 7,
+              "chunk_size_chars": 3111
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 8 \n \n1...."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 8,
+            "page_number": 8,
+            "chunk_size_chars": 2625,
+            "id": "car24_chpt1_0.pdf_chunk_0008",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 396,
+            "metadata": {
+              "chunk_index": 8,
+              "page_number": 8,
+              "chunk_size_chars": 2625
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 9 \n26. ..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 9,
+            "page_number": 9,
+            "chunk_size_chars": 2655,
+            "id": "car24_chpt1_0.pdf_chunk_0009",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 399,
+            "metadata": {
+              "chunk_index": 9,
+              "page_number": 9,
+              "chunk_size_chars": 2655
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 10 \n30...."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 10,
+            "page_number": 10,
+            "chunk_size_chars": 2499,
+            "id": "car24_chpt1_0.pdf_chunk_0010",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 389,
+            "metadata": {
+              "chunk_index": 10,
+              "page_number": 10,
+              "chunk_size_chars": 2499
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 11 \ne. ..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 11,
+            "page_number": 11,
+            "chunk_size_chars": 1802,
+            "id": "car24_chpt1_0.pdf_chunk_0011",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 264,
+            "metadata": {
+              "chunk_index": 11,
+              "page_number": 11,
+              "chunk_size_chars": 1802
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 12 \nTab..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 12,
+            "page_number": 12,
+            "chunk_size_chars": 3081,
+            "id": "car24_chpt1_0.pdf_chunk_0012",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 454,
+            "metadata": {
+              "chunk_index": 12,
+              "page_number": 12,
+              "chunk_size_chars": 3081
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 13 \n44...."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 13,
+            "page_number": 13,
+            "chunk_size_chars": 3354,
+            "id": "car24_chpt1_0.pdf_chunk_0013",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 509,
+            "metadata": {
+              "chunk_index": 13,
+              "page_number": 13,
+              "chunk_size_chars": 3354
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 14 \nrel..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 14,
+            "page_number": 14,
+            "chunk_size_chars": 3680,
+            "id": "car24_chpt1_0.pdf_chunk_0014",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 551,
+            "metadata": {
+              "chunk_index": 14,
+              "page_number": 14,
+              "chunk_size_chars": 3680
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 15 \n51...."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 15,
+            "page_number": 15,
+            "chunk_size_chars": 3014,
+            "id": "car24_chpt1_0.pdf_chunk_0015",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 437,
+            "metadata": {
+              "chunk_index": 15,
+              "page_number": 15,
+              "chunk_size_chars": 3014
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 16 \ncir..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 16,
+            "page_number": 16,
+            "chunk_size_chars": 3880,
+            "id": "car24_chpt1_0.pdf_chunk_0016",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 566,
+            "metadata": {
+              "chunk_index": 16,
+              "page_number": 16,
+              "chunk_size_chars": 3880
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 17 \napp..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 17,
+            "page_number": 17,
+            "chunk_size_chars": 4182,
+            "id": "car24_chpt1_0.pdf_chunk_0017",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 623,
+            "metadata": {
+              "chunk_index": 17,
+              "page_number": 17,
+              "chunk_size_chars": 4182
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 18 \napp..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 18,
+            "page_number": 18,
+            "chunk_size_chars": 2718,
+            "id": "car24_chpt1_0.pdf_chunk_0018",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 424,
+            "metadata": {
+              "chunk_index": 18,
+              "page_number": 18,
+              "chunk_size_chars": 2718
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 19 \nabi..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 19,
+            "page_number": 19,
+            "chunk_size_chars": 3325,
+            "id": "car24_chpt1_0.pdf_chunk_0019",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 529,
+            "metadata": {
+              "chunk_index": 19,
+              "page_number": 19,
+              "chunk_size_chars": 3325
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 20 \n70...."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 20,
+            "page_number": 20,
+            "chunk_size_chars": 1438,
+            "id": "car24_chpt1_0.pdf_chunk_0020",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 202,
+            "metadata": {
+              "chunk_index": 20,
+              "page_number": 20,
+              "chunk_size_chars": 1438
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 21 \nTab..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 21,
+            "page_number": 21,
+            "chunk_size_chars": 3029,
+            "id": "car24_chpt1_0.pdf_chunk_0021",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 424,
+            "metadata": {
+              "chunk_index": 21,
+              "page_number": 21,
+              "chunk_size_chars": 3029
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 22 \nAnn..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 22,
+            "page_number": 22,
+            "chunk_size_chars": 3438,
+            "id": "car24_chpt1_0.pdf_chunk_0022",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 521,
+            "metadata": {
+              "chunk_index": 22,
+              "page_number": 22,
+              "chunk_size_chars": 3438
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 23 \nmar..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 23,
+            "page_number": 23,
+            "chunk_size_chars": 3171,
+            "id": "car24_chpt1_0.pdf_chunk_0023",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 469,
+            "metadata": {
+              "chunk_index": 23,
+              "page_number": 23,
+              "chunk_size_chars": 3171
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 24 \nins..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 24,
+            "page_number": 24,
+            "chunk_size_chars": 3036,
+            "id": "car24_chpt1_0.pdf_chunk_0024",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 420,
+            "metadata": {
+              "chunk_index": 24,
+              "page_number": 24,
+              "chunk_size_chars": 3036
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 25 \nlev..."
+        },
+        {
+          "type": "pdf_chunk",
+          "metadata": {
+            "chunk_index": 25,
+            "page_number": 25,
+            "chunk_size_chars": 605,
+            "id": "car24_chpt1_0.pdf_chunk_0025",
+            "type": "pdf_chunk",
+            "source_file": "car24_chpt1_0.pdf",
+            "source_sheet": "N/A",
+            "word_count": 94,
+            "metadata": {
+              "chunk_index": 25,
+              "page_number": 25,
+              "chunk_size_chars": 605
+            }
+          },
+          "content_preview": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 26 \nAnn..."
+        }
+      ]
+    }
+  },
+  "error_info": null,
+  "summary": "Found 52 matches for 'car24_chpt1_0.pdf'"
+}

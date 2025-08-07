@@ -1,0 +1,53 @@
+{
+  "test_id": 7,
+  "test_name": "7. Error Test - Missing Parameter",
+  "test_params": {
+    "operation": "get_full_file"
+  },
+  "expected": "Should return error for missing filename",
+  "start_time": "2025-08-06T20:23:26.921901",
+  "end_time": "2025-08-06T20:23:26.921937",
+  "duration_seconds": 3.6e-05,
+  "status": "UNKNOWN",
+  "passed": false,
+  "response": {
+    "status": "ERROR",
+    "error_type": "MissingParameter",
+    "message": "filename is required for get_full_file operation",
+    "details": "Example: {'operation': 'get_full_file', 'filename': 'document.pdf'}",
+    "suggestion": "Provide a valid filename",
+    "available_operations": [
+      "discover - List all files",
+      "get_full_file - Get complete file content",
+      "get_single_item - Get specific page/sheet",
+      "search_metadata - Search file metadata",
+      "search_content - Search document text"
+    ],
+    "example_usage": {
+      "discover_files": {
+        "operation": "discover"
+      },
+      "get_pdf_content": {
+        "operation": "get_full_file",
+        "filename": "document.pdf"
+      },
+      "get_specific_page": {
+        "operation": "get_single_item",
+        "filename": "document.pdf",
+        "page": 5
+      },
+      "search_text": {
+        "operation": "search_content",
+        "search_value": "capital requirements"
+      },
+      "search_metadata": {
+        "operation": "search_metadata",
+        "search_value": "2025-08-06",
+        "field": "processing_timestamp",
+        "search_type": "partial"
+      }
+    }
+  },
+  "error_info": null,
+  "summary": null
+}

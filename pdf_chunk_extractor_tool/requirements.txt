@@ -1,0 +1,13 @@
+# Core PDF processing requirements
+langchain>=0.1.0
+langchain-community>=0.0.20
+pypdf>=4.0.0
+
+# Text processing and tokenization
+tiktoken>=0.5.0
+
+# Optional for embeddings (install if using --embeddings flag)
+# langchain-huggingface>=0.0.1
+
+# Optional for environment management
+python-dotenv>=1.0.0

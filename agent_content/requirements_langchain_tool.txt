@@ -1,0 +1,18 @@
+# LangChain JSON Search Tool Requirements
+# Core dependencies for the LangChain wrapper tool
+
+# LangChain framework
+langchain>=0.1.0
+langchain-community>=0.0.20
+
+# Data processing (already included in main requirements)
+pydantic>=2.0.0
+
+# Optional: For testing with OpenAI models
+# openai>=1.0.0
+
+# Optional: For testing with Anthropic Claude 
+# anthropic>=0.7.0
+
+# JSON and regex support (built-in Python modules)
+# json, re, pathlib, typing - no additional installs needed

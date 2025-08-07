@@ -1,0 +1,23 @@
+# Agent Content Package Requirements
+# Complete dependencies for LangChain integrated discovery and synthesis tools
+
+# LangChain framework
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-core>=0.3.0
+
+# Data processing and validation
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# Gemini API for synthesis
+google-generativeai>=0.8.0
+
+# Core Python libraries (usually included)
+python-dotenv>=1.0.0
+
+# Optional: For enhanced token estimation
+tiktoken>=0.5.0
+
+# JSON and file processing (built-in Python modules)
+# json, pathlib, typing, datetime - no additional installs needed

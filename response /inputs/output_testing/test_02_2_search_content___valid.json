@@ -1,0 +1,343 @@
+{
+  "test_id": 2,
+  "test_name": "2. Search Content - Valid",
+  "test_params": {
+    "operation": "search_content",
+    "search_value": "OSFI",
+    "search_type": "partial"
+  },
+  "expected": "Should find content matches for 'OSFI'",
+  "start_time": "2025-08-06T20:23:26.912217",
+  "end_time": "2025-08-06T20:23:26.914007",
+  "duration_seconds": 0.00179,
+  "status": "SUCCESS",
+  "passed": true,
+  "response": {
+    "summary": {
+      "operation": "Content Search Results",
+      "status": "SUCCESS",
+      "input_parameters": {
+        "operation": "search_content",
+        "json_file_path": "../Fetch_data/unified_results.json",
+        "filename": null,
+        "search_value": "OSFI",
+        "field": null,
+        "search_type": "partial",
+        "page": null,
+        "sheet": null,
+        "chunk": null
+      },
+      "summary": "Found 40 matches for 'OSFI'"
+    },
+    "detailed_results": {
+      "status": "success",
+      "search_value": "OSFI",
+      "search_type": "partial",
+      "total_results": 40,
+      "results": [
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 0,
+          "chunk": 0,
+          "match_preview": "... \ncapital under subsection 473(3) of the TLCA. \n \nOSFI, as a member of the Basel Committee on Banking Su...",
+          "word_count": 346
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 2,
+          "chunk": 2,
+          "match_preview": "................................ 11 \n Calculation of OSFI Minimum Capital Requirements .......................",
+          "word_count": 178
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 3,
+          "chunk": 3,
+          "match_preview": "...institutions:  \na. all institutions designated by OSFI as domestic systemically important banks (D-\nSIBs...",
+          "word_count": 317
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 6,
+          "chunk": 6,
+          "match_preview": "...[Basel Framework, RBC 20.7] \n \n14. For banks with OSFI approval to use IMM to calculate counterparty cre...",
+          "word_count": 380
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 7,
+          "chunk": 7,
+          "match_preview": "...tutions must receive explicit prior approval from OSFI in order to use any of the \nfollowing model-based...",
+          "word_count": 473
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 8,
+          "chunk": 8,
+          "match_preview": "...has received an approval to use the IRB Approach, OSFI will \nmonitor, on a quarterly basis, the institut...",
+          "word_count": 396
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 9,
+          "chunk": 9,
+          "match_preview": "...ustment factor is normally set at 72.5%. However, OSFI may set a higher or \nlower adjustment factor for ...",
+          "word_count": 399
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 10,
+          "chunk": 10,
+          "match_preview": "...pter 2 of this guideline. \n \n1. 6. Calculation of OSFI Minimum Capital Requirements \n \n1.6.1. Risk-Based...",
+          "word_count": 389
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 12,
+          "chunk": 12,
+          "match_preview": "...apital restoration plan should be discussed with \nOSFI as part of the capital planning process. [Basel F...",
+          "word_count": 454
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 13,
+          "chunk": 13,
+          "match_preview": "...bution. This alternative should be discussed with OSFI as part of an institution’s \nInternal Capital Ade...",
+          "word_count": 509
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 14,
+          "chunk": 14,
+          "match_preview": "...sists, in Canada, of the following elements: \n(a) OSFI, in consultation with its Senior Advisory Committ...",
+          "word_count": 551
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 15,
+          "chunk": 15,
+          "match_preview": "...s warrant. This requirement will be released when OSFI, in consultation \nwith its SAC partners, assesses...",
+          "word_count": 437
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 17,
+          "chunk": 17,
+          "match_preview": "...ation and the rationale would be described in the OSFI communication. To give \ninstitutions time to adju...",
+          "word_count": 623
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 18,
+          "chunk": 18,
+          "match_preview": "...ver a range of systemic \nvulnerabilities that, in OSFI’s supervisory judgement, are not adequately captu...",
+          "word_count": 424
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 19,
+          "chunk": 19,
+          "match_preview": "...d \nmaterialize in the foreseeable future.  \n \n72. OSFI will undertake a review of the buffer on a semi-a...",
+          "word_count": 529
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 20,
+          "chunk": 20,
+          "match_preview": "...ers for supervisory intervention \nconsistent with OSFI’s Guide to Intervention.37 If an institution is o...",
+          "word_count": 202
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 21,
+          "chunk": 21,
+          "match_preview": "...with the systemic impact of failure. Accordingly, OSFI’s \nassessment of domestic systemic importance for...",
+          "word_count": 424
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 23,
+          "chunk": 23,
+          "match_preview": "...onship with Basel Committee G-SIB Framework \n \n9. OSFI has adopted the Basel Committee’s framework on th...",
+          "word_count": 469
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 24,
+          "chunk": 24,
+          "match_preview": "... complexity \nand risk profile of the institution. OSFI’s enhanced supervision of D-SIBs includes the \nfo...",
+          "word_count": 420
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 25,
+          "chunk": 25,
+          "match_preview": "...ary.  \niii. Calibration of the DSB is reviewed by OSFI semi-annually and is set between 0% to 4.0% of RW...",
+          "word_count": 94
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "... \ncapital under subsection 473(3) of the TLCA. \n \nOSFI, as a member of the Basel Committee on Banking Su...",
+          "word_count": 346
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "................................ 11 \n Calculation of OSFI Minimum Capital Requirements .......................",
+          "word_count": 178
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...institutions:  \na. all institutions designated by OSFI as domestic systemically important banks (D-\nSIBs...",
+          "word_count": 317
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...[Basel Framework, RBC 20.7] \n \n14. For banks with OSFI approval to use IMM to calculate counterparty cre...",
+          "word_count": 380
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...tutions must receive explicit prior approval from OSFI in order to use any of the \nfollowing model-based...",
+          "word_count": 473
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...has received an approval to use the IRB Approach, OSFI will \nmonitor, on a quarterly basis, the institut...",
+          "word_count": 396
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...ustment factor is normally set at 72.5%. However, OSFI may set a higher or \nlower adjustment factor for ...",
+          "word_count": 399
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...pter 2 of this guideline. \n \n1. 6. Calculation of OSFI Minimum Capital Requirements \n \n1.6.1. Risk-Based...",
+          "word_count": 389
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...apital restoration plan should be discussed with \nOSFI as part of the capital planning process. [Basel F...",
+          "word_count": 454
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...bution. This alternative should be discussed with OSFI as part of an institution’s \nInternal Capital Ade...",
+          "word_count": 509
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...sists, in Canada, of the following elements: \n(a) OSFI, in consultation with its Senior Advisory Committ...",
+          "word_count": 551
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...s warrant. This requirement will be released when OSFI, in consultation \nwith its SAC partners, assesses...",
+          "word_count": 437
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...ation and the rationale would be described in the OSFI communication. To give \ninstitutions time to adju...",
+          "word_count": 623
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...ver a range of systemic \nvulnerabilities that, in OSFI’s supervisory judgement, are not adequately captu...",
+          "word_count": 424
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...d \nmaterialize in the foreseeable future.  \n \n72. OSFI will undertake a review of the buffer on a semi-a...",
+          "word_count": 529
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...ers for supervisory intervention \nconsistent with OSFI’s Guide to Intervention.37 If an institution is o...",
+          "word_count": 202
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...with the systemic impact of failure. Accordingly, OSFI’s \nassessment of domestic systemic importance for...",
+          "word_count": 424
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...onship with Basel Committee G-SIB Framework \n \n9. OSFI has adopted the Basel Committee’s framework on th...",
+          "word_count": 469
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "... complexity \nand risk profile of the institution. OSFI’s enhanced supervision of D-SIBs includes the \nfo...",
+          "word_count": 420
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...ary.  \niii. Calibration of the DSB is reviewed by OSFI semi-annually and is set between 0% to 4.0% of RW...",
+          "word_count": 94
+        }
+      ]
+    }
+  },
+  "error_info": null,
+  "summary": "Found 40 matches for 'OSFI'"
+}

@@ -1,0 +1,44 @@
+{
+  "test_id": 4,
+  "test_name": "4. Get Single Item - Specific Page",
+  "test_params": {
+    "operation": "get_single_item",
+    "filename": "car24_chpt1_0.pdf",
+    "page": 5
+  },
+  "expected": "Should retrieve page 5 content",
+  "start_time": "2025-08-06T20:23:26.917792",
+  "end_time": "2025-08-06T20:23:26.918665",
+  "duration_seconds": 0.000873,
+  "status": "SUCCESS",
+  "passed": true,
+  "response": {
+    "summary": {
+      "operation": "Single Item Results",
+      "status": "SUCCESS",
+      "input_parameters": {
+        "operation": "get_single_item",
+        "json_file_path": "../Fetch_data/unified_results.json",
+        "filename": "car24_chpt1_0.pdf",
+        "search_value": null,
+        "field": null,
+        "search_type": "partial",
+        "page": 5,
+        "sheet": null,
+        "chunk": null
+      },
+      "summary": "Found item in car24_chpt1_0.pdf"
+    },
+    "detailed_results": {
+      "status": "success",
+      "type": "pdf_chunk",
+      "filename": "car24_chpt1_0.pdf",
+      "page": 5,
+      "chunk": 5,
+      "words": 486,
+      "content": "Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 6 \ne. RWA for exposures to central counterparties in the banking book and trading \nbook, calculated using the approach set out in Chapter 7.  \nf. RWA for the risk posed by unsettled transactions and failed trades, where the \ntransactions are in the banking book or trading book and are within the scope of \nthe rules set out in Chapter 7.  \ng. RWA for credit valuation adjustment (CVA) risk for exposures in the trading and \nbanking book, calculated as set out in Chapter 8 using either: \ni. The standardized approach for CVA; or \nii. The advanced approach for CVA.    \n[Basel Framework, RBC 20.6] \n \n9. Institutions that have total regulatory capital (net of deductions) in excess of CAD $5 \nbillion, or that have greater than 10% of total assets or greater than 10% of total liabilities that \nare international,\n6 are expected to use IRB approaches for all material portfolios and credit \nbusinesses in Canada and the United States.   \n10. Under the IRB approaches, exposure at default (EAD) is determined gross of all specific \nallowances. The amount used in the calculation of EAD should normally be based on book \nvalue, except for the following where EAD should be based on amortized cost: \n• loans fair valued under the fair value option or fair value hedge; and \n• debt and loans fair valued through Other Comprehensive Income. \n \n11. Under the standardized approach, on-balance sheet exposures should normally be \nmeasured at book value, except the following where exposures should be measured at amortized \ncost: \n• loans fair valued under the fair value option or fair value hedge;  \n• debt and loans fair valued through Other Comprehensive Income; and \n• own-use property, plant and equipment \n \n12. For own-use property that is accounted for using the revaluation model, reported \nexposures should be based on an adjusted book value that reverses the impact of: \n• the balance of any revaluation surplus included in Other Comprehensive Income; and \n• accumulated net after-tax revaluation losses that are reflected in retained earnings or as a \nresult of subsequent revaluations \n \n13. The approaches listed in paragraph 8 specify how institutions should measure the size of \ntheir exposures (i.e. EAD) and determine their RWA. Certain types of transactions in the \nbanking book and trading book (such as derivatives and securities financial transactions) give \nrise to counterparty credit risk, for which the measurement of the size of the exposure can be \ncomplex. Therefore, the approaches listed in paragraph 8 include, or cross refer to, the following \nmethods available to determine the size of the counterparty exposures (refer to section 7.1 of \nChapter 7 for an overview of the counterparty credit risk requirements including the types of \ntransactions to which the methods below can be applied): \n \n6 This includes assets and liabilities booked outside of Canada as well as assets and liabilities of non -residents \nbooked in Canada."
+    }
+  },
+  "error_info": null,
+  "summary": "Found item in car24_chpt1_0.pdf"
+}

@@ -1,0 +1,433 @@
+{
+  "test_id": 12,
+  "test_name": "12. Natural Language Test - Content Search",
+  "test_params": {
+    "operation": "search_content",
+    "search_value": "capital requirements",
+    "search_type": "partial"
+  },
+  "expected": "Natural language: Find all mentions of capital requirements",
+  "start_time": "2025-08-06T20:23:26.926323",
+  "end_time": "2025-08-06T20:23:26.927852",
+  "duration_seconds": 0.001529,
+  "status": "SUCCESS",
+  "passed": true,
+  "response": {
+    "summary": {
+      "operation": "Content Search Results",
+      "status": "SUCCESS",
+      "input_parameters": {
+        "operation": "search_content",
+        "json_file_path": "../Fetch_data/unified_results.json",
+        "filename": null,
+        "search_value": "capital requirements",
+        "field": null,
+        "search_type": "partial",
+        "page": null,
+        "sheet": null,
+        "chunk": null
+      },
+      "summary": "Found 52 matches for 'capital requirements'"
+    },
+    "detailed_results": {
+      "status": "success",
+      "search_value": "capital requirements",
+      "search_type": "partial",
+      "total_results": 52,
+      "results": [
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 0,
+          "chunk": 0,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 1 \nGuideline \n ...",
+          "word_count": 346
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 1,
+          "chunk": 1,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 2 \nChapter 1 - ...",
+          "word_count": 132
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 2,
+          "chunk": 2,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 3 \n \nTable of C...",
+          "word_count": 178
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 3,
+          "chunk": 3,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 4 \nChapter 1 – ...",
+          "word_count": 317
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 4,
+          "chunk": 4,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 5 \n6. The crite...",
+          "word_count": 305
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 5,
+          "chunk": 5,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 6 \ne. RWA for e...",
+          "word_count": 486
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 6,
+          "chunk": 6,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 7 \n \na. The sta...",
+          "word_count": 380
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 7,
+          "chunk": 7,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 8 \n \n1. 4. Appr...",
+          "word_count": 473
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 8,
+          "chunk": 8,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 9 \n26. Once an ...",
+          "word_count": 396
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 9,
+          "chunk": 9,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 10 \n30. The adj...",
+          "word_count": 399
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 10,
+          "chunk": 10,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 11 \ne. the IMM ...",
+          "word_count": 389
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 11,
+          "chunk": 11,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 12 \nTable 2: Mi...",
+          "word_count": 264
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 12,
+          "chunk": 12,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 13 \n44. When bu...",
+          "word_count": 454
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 13,
+          "chunk": 13,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 14 \nrelate only...",
+          "word_count": 509
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 14,
+          "chunk": 14,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 15 \n51. Items c...",
+          "word_count": 551
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 15,
+          "chunk": 15,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 16 \ncircumstanc...",
+          "word_count": 437
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 16,
+          "chunk": 16,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 17 \napply to an...",
+          "word_count": 566
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 17,
+          "chunk": 17,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 18 \napplication...",
+          "word_count": 623
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 18,
+          "chunk": 18,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 19 \nability to ...",
+          "word_count": 424
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 19,
+          "chunk": 19,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 20 \n70. D-SIBs ...",
+          "word_count": 529
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 20,
+          "chunk": 20,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 21 \nTable 8: Ta...",
+          "word_count": 202
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 21,
+          "chunk": 21,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 22 \nAnnex 1  Do...",
+          "word_count": 424
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 22,
+          "chunk": 22,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 23 \nmarkets, an...",
+          "word_count": 521
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 23,
+          "chunk": 23,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 24 \ninstitution...",
+          "word_count": 469
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 24,
+          "chunk": 24,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 25 \nlevel, exte...",
+          "word_count": 420
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "page": 25,
+          "chunk": 25,
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 26 \nAnnex 2 Sup...",
+          "word_count": 94
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 1 \nGuideline \n ...",
+          "word_count": 346
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 2 \nChapter 1 - ...",
+          "word_count": 132
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 3 \n \nTable of C...",
+          "word_count": 178
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 4 \nChapter 1 – ...",
+          "word_count": 317
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 5 \n6. The crite...",
+          "word_count": 305
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 6 \ne. RWA for e...",
+          "word_count": 486
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 7 \n \na. The sta...",
+          "word_count": 380
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 8 \n \n1. 4. Appr...",
+          "word_count": 473
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 9 \n26. Once an ...",
+          "word_count": 396
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 10 \n30. The adj...",
+          "word_count": 399
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 11 \ne. the IMM ...",
+          "word_count": 389
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 12 \nTable 2: Mi...",
+          "word_count": 264
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 13 \n44. When bu...",
+          "word_count": 454
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 14 \nrelate only...",
+          "word_count": 509
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 15 \n51. Items c...",
+          "word_count": 551
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 16 \ncircumstanc...",
+          "word_count": 437
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 17 \napply to an...",
+          "word_count": 566
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 18 \napplication...",
+          "word_count": 623
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 19 \nability to ...",
+          "word_count": 424
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 20 \n70. D-SIBs ...",
+          "word_count": 529
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 21 \nTable 8: Ta...",
+          "word_count": 202
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 22 \nAnnex 1  Do...",
+          "word_count": 424
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 23 \nmarkets, an...",
+          "word_count": 521
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 24 \ninstitution...",
+          "word_count": 469
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 25 \nlevel, exte...",
+          "word_count": 420
+        },
+        {
+          "type": "pdf_chunk",
+          "filename": "car24_chpt1_0.pdf",
+          "sheet": "N/A",
+          "match_preview": "...Banks/BHC/T&L  Overview of risk-based capital requirements \n  October 2023  Chapter 1 - Page 26 \nAnnex 2 Sup...",
+          "word_count": 94
+        }
+      ]
+    }
+  },
+  "error_info": null,
+  "summary": "Found 52 matches for 'capital requirements'"
+}

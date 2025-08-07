@@ -1,0 +1,76 @@
+{
+  "test_id": 15,
+  "test_name": "15. Natural Language Test - Word Count Analysis",
+  "test_params": {
+    "operation": "discover"
+  },
+  "expected": "Natural language: What is the total token count of all the words in attached file (uses discover to get file stats)",
+  "start_time": "2025-08-06T20:23:26.930333",
+  "end_time": "2025-08-06T20:23:26.931202",
+  "duration_seconds": 0.000869,
+  "status": "SUCCESS",
+  "passed": true,
+  "response": {
+    "summary": {
+      "operation": "File Discovery",
+      "status": "SUCCESS",
+      "input_parameters": {
+        "operation": "discover",
+        "json_file_path": "../Fetch_data/unified_results.json",
+        "filename": null,
+        "search_value": null,
+        "field": null,
+        "search_type": "partial",
+        "page": null,
+        "sheet": null,
+        "chunk": null
+      },
+      "summary": "Found 3 files",
+      "files": [
+        "TechTrend_Financials_2024.xlsx",
+        "car24_chpt1_0.pdf",
+        "test_business_data.csv"
+      ]
+    },
+    "detailed_results": {
+      "status": "success",
+      "total_files": 3,
+      "files": [
+        "TechTrend_Financials_2024.xlsx",
+        "car24_chpt1_0.pdf",
+        "test_business_data.csv"
+      ],
+      "details": [
+        {
+          "filename": "car24_chpt1_0.pdf",
+          "file_type": "pdf",
+          "chunks": 26,
+          "words": 10288,
+          "sheets": "N/A"
+        },
+        {
+          "filename": "TechTrend_Financials_2024.xlsx",
+          "file_type": "xlsx",
+          "chunks": "N/A",
+          "words": 150,
+          "sheets": [
+            "Income Statement",
+            "Balance Sheet",
+            "Cash Flow Statement"
+          ]
+        },
+        {
+          "filename": "test_business_data.csv",
+          "file_type": "csv",
+          "chunks": "N/A",
+          "words": 67,
+          "sheets": [
+            "CSV_Data"
+          ]
+        }
+      ]
+    }
+  },
+  "error_info": null,
+  "summary": "Found 3 files"
+}

@@ -1,0 +1,40 @@
+{
+  "test_id": 9,
+  "test_name": "9. Error Test - File Not Found",
+  "test_params": {
+    "operation": "get_full_file",
+    "filename": "nonexistent_file.pdf"
+  },
+  "expected": "Should handle file not found gracefully",
+  "start_time": "2025-08-06T20:23:26.922272",
+  "end_time": "2025-08-06T20:23:26.923052",
+  "duration_seconds": 0.00078,
+  "status": "SUCCESS",
+  "passed": true,
+  "response": {
+    "summary": {
+      "operation": "Full File Results",
+      "status": "SUCCESS",
+      "input_parameters": {
+        "operation": "get_full_file",
+        "json_file_path": "../Fetch_data/unified_results.json",
+        "filename": "nonexistent_file.pdf",
+        "search_value": null,
+        "field": null,
+        "search_type": "partial",
+        "page": null,
+        "sheet": null,
+        "chunk": null
+      },
+      "summary": "Retrieved 0 items from nonexistent_file.pdf"
+    },
+    "detailed_results": {
+      "status": "success",
+      "filename": "nonexistent_file.pdf",
+      "total_items": 0,
+      "items": []
+    }
+  },
+  "error_info": null,
+  "summary": "Retrieved 0 items from nonexistent_file.pdf"
+}

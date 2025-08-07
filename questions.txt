@@ -1,0 +1,12 @@
+In OSFI's CAR guideline, how should an institution using the IRB approach calculate its capital floor requirements? Provide the relevant CAR references.
+In OSFI CAR Guideline, when does a securitization exposure need to be treated under the Credit Risk RWA requirements and when under Market Risk RWA? Also provide the relevant references identified.
+In OSFI CAR 2024 guideline, what is the definition of default and the associated capital treatment for defaulted exposures?
+In OSFI CAR 2024 guideline, what is the capital treatment for expected losses for institutions using the IRB Approach?
+What are the restrictions in OSFI's CAR Guideline for making transfers of instruments between Trading Book and Banking Book?
+As per OSFI CAR Guideline, how is wrong-way risk calculated?
+In OSFI's CAR Guideline, how are the capital requirements determined for Credit Valuation Adjustment (CVA)?
+In OSFI's CAR Guideline, how are the capital requirements calculated for overlapping securitization exposures?
+What is credit valuation adjustment and how are the capital requirements determined?
+What are the operational risk capital requirements under OSFI CAR guidelines?
+How does OSFI define Tier 1 capital and what are the eligibility criteria?
+What are the leverage ratio requirements for Canadian banks under OSFI guidelines?

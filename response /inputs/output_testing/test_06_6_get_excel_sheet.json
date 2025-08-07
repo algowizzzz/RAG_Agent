@@ -1,0 +1,120 @@
+{
+  "test_id": 6,
+  "test_name": "6. Get Excel Sheet",
+  "test_params": {
+    "operation": "get_single_item",
+    "filename": "TechTrend_Financials_2024.xlsx",
+    "sheet": "Balance Sheet"
+  },
+  "expected": "Should retrieve Balance Sheet data",
+  "start_time": "2025-08-06T20:23:26.920928",
+  "end_time": "2025-08-06T20:23:26.921704",
+  "duration_seconds": 0.000776,
+  "status": "SUCCESS",
+  "passed": true,
+  "response": {
+    "summary": {
+      "operation": "Single Item Results",
+      "status": "SUCCESS",
+      "input_parameters": {
+        "operation": "get_single_item",
+        "json_file_path": "../Fetch_data/unified_results.json",
+        "filename": "TechTrend_Financials_2024.xlsx",
+        "search_value": null,
+        "field": null,
+        "search_type": "partial",
+        "page": null,
+        "sheet": "Balance Sheet",
+        "chunk": null
+      },
+      "summary": "Found item in TechTrend_Financials_2024.xlsx"
+    },
+    "detailed_results": {
+      "status": "success",
+      "type": "excel_table",
+      "filename": "TechTrend_Financials_2024.xlsx",
+      "sheet": "Balance Sheet",
+      "words": 51,
+      "content": {
+        "columns": [
+          "Category",
+          "Item",
+          "Amount (USD)"
+        ],
+        "data": [
+          {
+            "Category": "Assets",
+            "Item": "Current Assets",
+            "Amount (USD)": 2500000
+          },
+          {
+            "Category": "Assets",
+            "Item": "Cash",
+            "Amount (USD)": 1000000
+          },
+          {
+            "Category": "Assets",
+            "Item": "Accounts Receivable",
+            "Amount (USD)": 800000
+          },
+          {
+            "Category": "Assets",
+            "Item": "Inventory",
+            "Amount (USD)": 700000
+          },
+          {
+            "Category": "Assets",
+            "Item": "Fixed Assets",
+            "Amount (USD)": 1500000
+          },
+          {
+            "Category": "Assets",
+            "Item": "Property and Equipment",
+            "Amount (USD)": 1200000
+          },
+          {
+            "Category": "Assets",
+            "Item": "Intangible Assets",
+            "Amount (USD)": 300000
+          },
+          {
+            "Category": "Liabilities",
+            "Item": "Current Liabilities",
+            "Amount (USD)": 900000
+          },
+          {
+            "Category": "Liabilities",
+            "Item": "Accounts Payable",
+            "Amount (USD)": 500000
+          },
+          {
+            "Category": "Liabilities",
+            "Item": "Short-term Debt",
+            "Amount (USD)": 400000
+          },
+          {
+            "Category": "Liabilities",
+            "Item": "Long-term Debt",
+            "Amount (USD)": 600000
+          },
+          {
+            "Category": "Equity",
+            "Item": "Common Stock",
+            "Amount (USD)": 1000000
+          },
+          {
+            "Category": "Equity",
+            "Item": "Retained Earnings",
+            "Amount (USD)": 1500000
+          }
+        ],
+        "shape": [
+          13,
+          3
+        ]
+      }
+    }
+  },
+  "error_info": null,
+  "summary": "Found item in TechTrend_Financials_2024.xlsx"
+}
