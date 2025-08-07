@@ -75,13 +75,13 @@ def main():
     print("=" * 60)
     
     # The specific question
-    question = 'As a assistant to cfo, review the Show me the Balance Sheet data from the techtrends Excel file'
+    question = 'give me a detailed report on what is wrong way risk and how it is calculated'
     print(f"❓ Question: {question}")
     print("=" * 60)
     
     # Initialize tool
     try:
-        tool = create_integrated_discovery_synthesis_tool("../Fetch_data/unified_results.json")
+        tool = create_integrated_discovery_synthesis_tool("InputData/pdf.json")
         print("✅ Tool initialized")
     except Exception as e:
         print(f"❌ Error initializing tool: {str(e)}")
@@ -94,8 +94,8 @@ def main():
     try:
         result = tool._run(
             user_query=question,
-            include_reasoning=True,
-            max_results=30
+            json_file_path="InputData/pdf.json",
+            include_reasoning=True
         )
         
         result_data = json.loads(result)

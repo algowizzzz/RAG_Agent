@@ -38,6 +38,7 @@ class RefineConfig:
     prompt_overhead_tokens: int = 1000
     average_chunk_tokens: int = 530  # Based on your data analysis
     temperature: float = 0.1
+    max_chunks_per_batch: int = 50  # Process 50 chunks per batch for efficiency
     
     @property
     def max_content_tokens(self) -> int:
@@ -45,7 +46,7 @@ class RefineConfig:
     
     @property
     def chunks_per_batch(self) -> int:
-        return self.max_content_tokens // self.average_chunk_tokens
+        return self.max_chunks_per_batch  # Use fixed batch size instead of token-based calculation
 
 
 class RefineSynthesisTool:
@@ -292,44 +293,66 @@ Provide the refined and improved response:"""
         """Extract content chunks from your JSON retrieval format."""
         chunks = []
         
-        response_data = data.get('response', {})
-        detailed_results = response_data.get('detailed_results', {})
+        # Handle unified parser format first
+        if 'unified_data' in data and isinstance(data['unified_data'], list):
+            print(f"📦 Processing unified_data format with {len(data['unified_data'])} items")
+            
+            for item in data['unified_data']:
+                if isinstance(item, dict):
+                    item_type = item.get('type', '')
+                    
+                    if item_type == 'pdf_chunk':
+                        # PDF chunk content
+                        content = item.get('content', '')
+                        if content:
+                            chunks.append(content)
+                            
+                    elif item_type in ['excel_table', 'csv_table']:
+                        # Excel/CSV table content
+                        formatted_content = self.format_unified_excel_data(item)
+                        if formatted_content:
+                            chunks.append(formatted_content)
         
-        # Handle different content types from your system
-        if detailed_results.get('type') == 'pdf_chunk':
-            # Single PDF chunk
-            content = detailed_results.get('content', '')
-            if content:
+        else:
+            # Handle legacy JSON search results format
+            response_data = data.get('response', {})
+            detailed_results = response_data.get('detailed_results', {})
+            
+            # Handle different content types from your system
+            if detailed_results.get('type') == 'pdf_chunk':
+                # Single PDF chunk
+                content = detailed_results.get('content', '')
+                if content:
+                    chunks.append(content)
+                    
+            elif detailed_results.get('type') == 'excel_table':
+                # Excel data - format as readable text
+                excel_content = detailed_results.get('content', {})
+                if 'data' in excel_content:
+                    formatted_content = self.format_excel_data(excel_content)
+                    chunks.append(formatted_content)
+                    
+            elif 'results' in detailed_results:
+                # Search results with multiple chunks
+                results = detailed_results.get('results', [])
+                for result in results:
+                    if 'match_preview' in result:
+                        chunks.append(result['match_preview'])
+                    elif 'content' in result:
+                        chunks.append(result['content'])
+                        
+            elif 'items' in detailed_results:
+                # Full file results with items array
+                items = detailed_results.get('items', [])
+                for item in items:
+                    if 'content' in item:
+                        chunks.append(item['content'])
+                        
+            elif 'files' in detailed_results:
+                # File discovery results
+                files = detailed_results.get('files', [])
+                content = f"Available files: {', '.join(files)}"
                 chunks.append(content)
-                
-        elif detailed_results.get('type') == 'excel_table':
-            # Excel data - format as readable text
-            excel_content = detailed_results.get('content', {})
-            if 'data' in excel_content:
-                formatted_content = self.format_excel_data(excel_content)
-                chunks.append(formatted_content)
-                
-        elif 'results' in detailed_results:
-            # Search results with multiple chunks
-            results = detailed_results.get('results', [])
-            for result in results:
-                if 'match_preview' in result:
-                    chunks.append(result['match_preview'])
-                elif 'content' in result:
-                    chunks.append(result['content'])
-                    
-        elif 'items' in detailed_results:
-            # Full file results with items array
-            items = detailed_results.get('items', [])
-            for item in items:
-                if 'content' in item:
-                    chunks.append(item['content'])
-                    
-        elif 'files' in detailed_results:
-            # File discovery results
-            files = detailed_results.get('files', [])
-            content = f"Available files: {', '.join(files)}"
-            chunks.append(content)
         
         return chunks
 
@@ -351,6 +374,43 @@ Provide the refined and improved response:"""
             formatted += "\n"
         
         return formatted
+
+    def format_unified_excel_data(self, item: Dict[str, Any]) -> str:
+        """Format unified parser Excel/CSV data into readable text for synthesis."""
+        content = item.get('content', {})
+        source_file = item.get('source_file', 'Unknown')
+        source_sheet = item.get('source_sheet', 'Unknown')
+        item_type = item.get('type', 'table')
+        
+        if not content:
+            return None
+            
+        # Handle the unified parser Excel format
+        if 'columns' in content and 'data' in content:
+            columns = content['columns']
+            data = content['data']
+            
+            formatted = f"[{item_type.upper()}] {source_file} - {source_sheet}\n"
+            formatted += f"Columns: {', '.join(columns)}\n\n"
+            
+            # Limit to first 15 rows for synthesis efficiency
+            for i, row in enumerate(data[:15]):
+                formatted += f"Row {i+1}:\n"
+                for col in columns:
+                    value = row.get(col, 'N/A')
+                    formatted += f"  {col}: {value}\n"
+                formatted += "\n"
+            
+            if len(data) > 15:
+                formatted += f"... and {len(data) - 15} more rows\n"
+            
+            return formatted
+        
+        # Handle direct content if it's a string
+        elif isinstance(content, str):
+            return f"[{item_type.upper()}] {source_file} - {source_sheet}\n{content}"
+        
+        return None
 
     def infer_query_from_json(self, data: Dict[str, Any]) -> str:
         """Infer user query from test data."""

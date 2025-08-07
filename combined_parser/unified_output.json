@@ -1,0 +1,882 @@
+{
+  "metadata": {
+    "processing_timestamp": "2025-08-07T07:04:14.096162",
+    "source_type": "unified_parser",
+    "total_files": 2,
+    "total_words": 217,
+    "pdf_files": 0,
+    "excel_files": 1,
+    "csv_files": 1,
+    "unknown_files": 0,
+    "file_breakdown": [
+      {
+        "filename": "TechTrend_Financials_2024.xlsx",
+        "file_type": "xlsx",
+        "sheets": [
+          "Income Statement",
+          "Balance Sheet",
+          "Cash Flow Statement"
+        ],
+        "chunks": "N/A",
+        "words": 150
+      },
+      {
+        "filename": "test_business_data.csv",
+        "file_type": "csv",
+        "sheets": [
+          "CSV_Data"
+        ],
+        "chunks": "N/A",
+        "words": 67
+      }
+    ],
+    "processing_summary": {
+      "pdf_chunks": 0,
+      "excel_tables": 4,
+      "total_pages": 0,
+      "total_sheets": 4
+    },
+    "errors": []
+  },
+  "pdf_results": {
+    "metadata": {
+      "total_files": 0
+    },
+    "documents": [],
+    "chunks": []
+  },
+  "excel_results": {
+    "metadata": {
+      "processing_timestamp": "2025-08-07T07:04:14.021970",
+      "source_type": "excel_csv_enhanced",
+      "total_files": 2,
+      "files_processed": [
+        {
+          "filename": "TechTrend_Financials_2024.xlsx",
+          "file_type": "xlsx",
+          "total_words": 150,
+          "word_count_by_sheet": [
+            {
+              "sheet_name": "Income Statement",
+              "word_count": 32
+            },
+            {
+              "sheet_name": "Balance Sheet",
+              "word_count": 51
+            },
+            {
+              "sheet_name": "Cash Flow Statement",
+              "word_count": 67
+            }
+          ]
+        },
+        {
+          "filename": "test_business_data.csv",
+          "file_type": "csv",
+          "total_words": 67,
+          "word_count_by_sheet": [
+            {
+              "sheet_name": "CSV_Data",
+              "word_count": 67
+            }
+          ]
+        }
+      ],
+      "total_sheets": 4,
+      "total_tables": 4,
+      "total_rows": 0,
+      "total_words": 217,
+      "total_chunks": "N/A",
+      "total_pages": "N/A",
+      "chunk_size": "N/A",
+      "chunk_overlap": "N/A",
+      "embedding_model": null,
+      "average_chunks_per_file": "N/A",
+      "word_count_by_sheet": [
+        {
+          "sheet_name": "Income Statement",
+          "word_count": 32
+        },
+        {
+          "sheet_name": "Balance Sheet",
+          "word_count": 51
+        },
+        {
+          "sheet_name": "Cash Flow Statement",
+          "word_count": 67
+        },
+        {
+          "sheet_name": "CSV_Data",
+          "word_count": 67
+        }
+      ]
+    },
+    "documents": [
+      {
+        "filename": "TechTrend_Financials_2024.xlsx",
+        "file_type": "xlsx",
+        "total_words": 150,
+        "word_count_by_sheet": [
+          {
+            "sheet_name": "Income Statement",
+            "word_count": 32
+          },
+          {
+            "sheet_name": "Balance Sheet",
+            "word_count": 51
+          },
+          {
+            "sheet_name": "Cash Flow Statement",
+            "word_count": 67
+          }
+        ],
+        "sheet_names": [
+          "Income Statement",
+          "Balance Sheet",
+          "Cash Flow Statement"
+        ]
+      },
+      {
+        "filename": "test_business_data.csv",
+        "file_type": "csv",
+        "total_words": 67,
+        "word_count_by_sheet": [
+          {
+            "sheet_name": "CSV_Data",
+            "word_count": 67
+          }
+        ],
+        "is_chunked": false,
+        "chunk_count": 1
+      }
+    ],
+    "data": [
+      {
+        "table_id": 0,
+        "global_table_id": "TechTrend_Financials_2024.xlsx_Income Statement_table_0000",
+        "content": {
+          "columns": [
+            "Item",
+            "Amount (USD)"
+          ],
+          "data": [
+            {
+              "Item": "Revenue",
+              "Amount (USD)": 5000000
+            },
+            {
+              "Item": "Cost of Goods Sold",
+              "Amount (USD)": 2000000
+            },
+            {
+              "Item": "Gross Profit",
+              "Amount (USD)": 3000000
+            },
+            {
+              "Item": "Operating Expenses",
+              "Amount (USD)": 1200000
+            },
+            {
+              "Item": "Salaries",
+              "Amount (USD)": 600000
+            },
+            {
+              "Item": "Rent",
+              "Amount (USD)": 200000
+            },
+            {
+              "Item": "Utilities",
+              "Amount (USD)": 100000
+            },
+            {
+              "Item": "Marketing",
+              "Amount (USD)": 300000
+            },
+            {
+              "Item": "Operating Income",
+              "Amount (USD)": 1800000
+            },
+            {
+              "Item": "Interest Expense",
+              "Amount (USD)": 50000
+            },
+            {
+              "Item": "Taxes",
+              "Amount (USD)": 400000
+            },
+            {
+              "Item": "Net Income",
+              "Amount (USD)": 1350000
+            }
+          ],
+          "shape": [
+            12,
+            2
+          ]
+        },
+        "metadata": {
+          "source_file": "TechTrend_Financials_2024.xlsx",
+          "source_sheet": "Income Statement",
+          "data_type": "table",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "is_chunked": false
+        },
+        "statistics": {
+          "row_count": 12,
+          "column_count": 2,
+          "word_count": 32
+        }
+      },
+      {
+        "table_id": 1,
+        "global_table_id": "TechTrend_Financials_2024.xlsx_Balance Sheet_table_0001",
+        "content": {
+          "columns": [
+            "Category",
+            "Item",
+            "Amount (USD)"
+          ],
+          "data": [
+            {
+              "Category": "Assets",
+              "Item": "Current Assets",
+              "Amount (USD)": 2500000
+            },
+            {
+              "Category": "Assets",
+              "Item": "Cash",
+              "Amount (USD)": 1000000
+            },
+            {
+              "Category": "Assets",
+              "Item": "Accounts Receivable",
+              "Amount (USD)": 800000
+            },
+            {
+              "Category": "Assets",
+              "Item": "Inventory",
+              "Amount (USD)": 700000
+            },
+            {
+              "Category": "Assets",
+              "Item": "Fixed Assets",
+              "Amount (USD)": 1500000
+            },
+            {
+              "Category": "Assets",
+              "Item": "Property and Equipment",
+              "Amount (USD)": 1200000
+            },
+            {
+              "Category": "Assets",
+              "Item": "Intangible Assets",
+              "Amount (USD)": 300000
+            },
+            {
+              "Category": "Liabilities",
+              "Item": "Current Liabilities",
+              "Amount (USD)": 900000
+            },
+            {
+              "Category": "Liabilities",
+              "Item": "Accounts Payable",
+              "Amount (USD)": 500000
+            },
+            {
+              "Category": "Liabilities",
+              "Item": "Short-term Debt",
+              "Amount (USD)": 400000
+            },
+            {
+              "Category": "Liabilities",
+              "Item": "Long-term Debt",
+              "Amount (USD)": 600000
+            },
+            {
+              "Category": "Equity",
+              "Item": "Common Stock",
+              "Amount (USD)": 1000000
+            },
+            {
+              "Category": "Equity",
+              "Item": "Retained Earnings",
+              "Amount (USD)": 1500000
+            }
+          ],
+          "shape": [
+            13,
+            3
+          ]
+        },
+        "metadata": {
+          "source_file": "TechTrend_Financials_2024.xlsx",
+          "source_sheet": "Balance Sheet",
+          "data_type": "table",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "is_chunked": false
+        },
+        "statistics": {
+          "row_count": 13,
+          "column_count": 3,
+          "word_count": 51
+        }
+      },
+      {
+        "table_id": 2,
+        "global_table_id": "TechTrend_Financials_2024.xlsx_Cash Flow Statement_table_0002",
+        "content": {
+          "columns": [
+            "Category",
+            "Item",
+            "Amount (USD)"
+          ],
+          "data": [
+            {
+              "Category": "Operating Activities",
+              "Item": "Net Income",
+              "Amount (USD)": 1350000
+            },
+            {
+              "Category": "Operating Activities",
+              "Item": "Depreciation",
+              "Amount (USD)": 200000
+            },
+            {
+              "Category": "Operating Activities",
+              "Item": "Changes in Working Capital",
+              "Amount (USD)": -100000
+            },
+            {
+              "Category": "Operating Activities",
+              "Item": "Net Cash from Operating",
+              "Amount (USD)": 1450000
+            },
+            {
+              "Category": "Investing Activities",
+              "Item": "Purchase of Equipment",
+              "Amount (USD)": -300000
+            },
+            {
+              "Category": "Investing Activities",
+              "Item": "Sale of Assets",
+              "Amount (USD)": 50000
+            },
+            {
+              "Category": "Investing Activities",
+              "Item": "Net Cash from Investing",
+              "Amount (USD)": -250000
+            },
+            {
+              "Category": "Financing Activities",
+              "Item": "Debt Issuance",
+              "Amount (USD)": 200000
+            },
+            {
+              "Category": "Financing Activities",
+              "Item": "Dividends Paid",
+              "Amount (USD)": -300000
+            },
+            {
+              "Category": "Financing Activities",
+              "Item": "Net Cash from Financing",
+              "Amount (USD)": -100000
+            },
+            {
+              "Category": "Net Cash Flow",
+              "Item": "Net Increase in Cash",
+              "Amount (USD)": 1000000
+            }
+          ],
+          "shape": [
+            11,
+            3
+          ]
+        },
+        "metadata": {
+          "source_file": "TechTrend_Financials_2024.xlsx",
+          "source_sheet": "Cash Flow Statement",
+          "data_type": "table",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "is_chunked": false
+        },
+        "statistics": {
+          "row_count": 11,
+          "column_count": 3,
+          "word_count": 67
+        }
+      },
+      {
+        "table_id": 3,
+        "global_table_id": "test_business_data.csv_CSV_Data_table_0003",
+        "content": {
+          "columns": [
+            "Department",
+            "Employees",
+            "Revenue_M",
+            "Expenses_M",
+            "Profit_M",
+            "Growth_Rate"
+          ],
+          "data": [
+            {
+              "Department": "Corporate Banking",
+              "Employees": 450,
+              "Revenue_M": 180.5,
+              "Expenses_M": 145.2,
+              "Profit_M": 35.3,
+              "Growth_Rate": "12.5%"
+            },
+            {
+              "Department": "Personal Banking",
+              "Employees": 1200,
+              "Revenue_M": 320.8,
+              "Expenses_M": 285.4,
+              "Profit_M": 35.4,
+              "Growth_Rate": "8.3%"
+            },
+            {
+              "Department": "Wealth Management",
+              "Employees": 280,
+              "Revenue_M": 95.2,
+              "Expenses_M": 67.8,
+              "Profit_M": 27.4,
+              "Growth_Rate": "15.7%"
+            },
+            {
+              "Department": "Investment Banking",
+              "Employees": 180,
+              "Revenue_M": 220.3,
+              "Expenses_M": 165.9,
+              "Profit_M": 54.4,
+              "Growth_Rate": "22.1%"
+            },
+            {
+              "Department": "Digital Services",
+              "Employees": 350,
+              "Revenue_M": 78.9,
+              "Expenses_M": 62.1,
+              "Profit_M": 16.8,
+              "Growth_Rate": "45.2%"
+            },
+            {
+              "Department": "Risk Management",
+              "Employees": 125,
+              "Revenue_M": 0.0,
+              "Expenses_M": 28.5,
+              "Profit_M": -28.5,
+              "Growth_Rate": "0%"
+            },
+            {
+              "Department": "Operations",
+              "Employees": 800,
+              "Revenue_M": 5.2,
+              "Expenses_M": 95.6,
+              "Profit_M": -90.4,
+              "Growth_Rate": "-2.1%"
+            },
+            {
+              "Department": "Technology",
+              "Employees": 420,
+              "Revenue_M": 12.3,
+              "Expenses_M": 156.8,
+              "Profit_M": -144.5,
+              "Growth_Rate": "18.9%"
+            },
+            {
+              "Department": "Human Resources",
+              "Employees": 85,
+              "Revenue_M": 0.0,
+              "Expenses_M": 18.7,
+              "Profit_M": -18.7,
+              "Growth_Rate": "0%"
+            },
+            {
+              "Department": "Marketing",
+              "Employees": 120,
+              "Revenue_M": 2.1,
+              "Expenses_M": 45.3,
+              "Profit_M": -43.2,
+              "Growth_Rate": "25.6%"
+            }
+          ],
+          "shape": [
+            10,
+            6
+          ]
+        },
+        "metadata": {
+          "source_file": "test_business_data.csv",
+          "source_sheet": "CSV_Data",
+          "data_type": "table",
+          "chunk_index": 0,
+          "total_chunks": 1,
+          "is_chunked": false
+        },
+        "statistics": {
+          "row_count": 10,
+          "column_count": 6,
+          "word_count": 67
+        }
+      }
+    ]
+  },
+  "unified_data": [
+    {
+      "id": "TechTrend_Financials_2024.xlsx_Income Statement_table_0000",
+      "type": "excel_table",
+      "source_file": "TechTrend_Financials_2024.xlsx",
+      "source_sheet": "Income Statement",
+      "content": {
+        "columns": [
+          "Item",
+          "Amount (USD)"
+        ],
+        "data": [
+          {
+            "Item": "Revenue",
+            "Amount (USD)": 5000000
+          },
+          {
+            "Item": "Cost of Goods Sold",
+            "Amount (USD)": 2000000
+          },
+          {
+            "Item": "Gross Profit",
+            "Amount (USD)": 3000000
+          },
+          {
+            "Item": "Operating Expenses",
+            "Amount (USD)": 1200000
+          },
+          {
+            "Item": "Salaries",
+            "Amount (USD)": 600000
+          },
+          {
+            "Item": "Rent",
+            "Amount (USD)": 200000
+          },
+          {
+            "Item": "Utilities",
+            "Amount (USD)": 100000
+          },
+          {
+            "Item": "Marketing",
+            "Amount (USD)": 300000
+          },
+          {
+            "Item": "Operating Income",
+            "Amount (USD)": 1800000
+          },
+          {
+            "Item": "Interest Expense",
+            "Amount (USD)": 50000
+          },
+          {
+            "Item": "Taxes",
+            "Amount (USD)": 400000
+          },
+          {
+            "Item": "Net Income",
+            "Amount (USD)": 1350000
+          }
+        ],
+        "shape": [
+          12,
+          2
+        ]
+      },
+      "word_count": 32,
+      "metadata": {
+        "table_id": 0,
+        "row_count": 12,
+        "column_count": 2,
+        "is_chunked": false
+      }
+    },
+    {
+      "id": "TechTrend_Financials_2024.xlsx_Balance Sheet_table_0001",
+      "type": "excel_table",
+      "source_file": "TechTrend_Financials_2024.xlsx",
+      "source_sheet": "Balance Sheet",
+      "content": {
+        "columns": [
+          "Category",
+          "Item",
+          "Amount (USD)"
+        ],
+        "data": [
+          {
+            "Category": "Assets",
+            "Item": "Current Assets",
+            "Amount (USD)": 2500000
+          },
+          {
+            "Category": "Assets",
+            "Item": "Cash",
+            "Amount (USD)": 1000000
+          },
+          {
+            "Category": "Assets",
+            "Item": "Accounts Receivable",
+            "Amount (USD)": 800000
+          },
+          {
+            "Category": "Assets",
+            "Item": "Inventory",
+            "Amount (USD)": 700000
+          },
+          {
+            "Category": "Assets",
+            "Item": "Fixed Assets",
+            "Amount (USD)": 1500000
+          },
+          {
+            "Category": "Assets",
+            "Item": "Property and Equipment",
+            "Amount (USD)": 1200000
+          },
+          {
+            "Category": "Assets",
+            "Item": "Intangible Assets",
+            "Amount (USD)": 300000
+          },
+          {
+            "Category": "Liabilities",
+            "Item": "Current Liabilities",
+            "Amount (USD)": 900000
+          },
+          {
+            "Category": "Liabilities",
+            "Item": "Accounts Payable",
+            "Amount (USD)": 500000
+          },
+          {
+            "Category": "Liabilities",
+            "Item": "Short-term Debt",
+            "Amount (USD)": 400000
+          },
+          {
+            "Category": "Liabilities",
+            "Item": "Long-term Debt",
+            "Amount (USD)": 600000
+          },
+          {
+            "Category": "Equity",
+            "Item": "Common Stock",
+            "Amount (USD)": 1000000
+          },
+          {
+            "Category": "Equity",
+            "Item": "Retained Earnings",
+            "Amount (USD)": 1500000
+          }
+        ],
+        "shape": [
+          13,
+          3
+        ]
+      },
+      "word_count": 51,
+      "metadata": {
+        "table_id": 1,
+        "row_count": 13,
+        "column_count": 3,
+        "is_chunked": false
+      }
+    },
+    {
+      "id": "TechTrend_Financials_2024.xlsx_Cash Flow Statement_table_0002",
+      "type": "excel_table",
+      "source_file": "TechTrend_Financials_2024.xlsx",
+      "source_sheet": "Cash Flow Statement",
+      "content": {
+        "columns": [
+          "Category",
+          "Item",
+          "Amount (USD)"
+        ],
+        "data": [
+          {
+            "Category": "Operating Activities",
+            "Item": "Net Income",
+            "Amount (USD)": 1350000
+          },
+          {
+            "Category": "Operating Activities",
+            "Item": "Depreciation",
+            "Amount (USD)": 200000
+          },
+          {
+            "Category": "Operating Activities",
+            "Item": "Changes in Working Capital",
+            "Amount (USD)": -100000
+          },
+          {
+            "Category": "Operating Activities",
+            "Item": "Net Cash from Operating",
+            "Amount (USD)": 1450000
+          },
+          {
+            "Category": "Investing Activities",
+            "Item": "Purchase of Equipment",
+            "Amount (USD)": -300000
+          },
+          {
+            "Category": "Investing Activities",
+            "Item": "Sale of Assets",
+            "Amount (USD)": 50000
+          },
+          {
+            "Category": "Investing Activities",
+            "Item": "Net Cash from Investing",
+            "Amount (USD)": -250000
+          },
+          {
+            "Category": "Financing Activities",
+            "Item": "Debt Issuance",
+            "Amount (USD)": 200000
+          },
+          {
+            "Category": "Financing Activities",
+            "Item": "Dividends Paid",
+            "Amount (USD)": -300000
+          },
+          {
+            "Category": "Financing Activities",
+            "Item": "Net Cash from Financing",
+            "Amount (USD)": -100000
+          },
+          {
+            "Category": "Net Cash Flow",
+            "Item": "Net Increase in Cash",
+            "Amount (USD)": 1000000
+          }
+        ],
+        "shape": [
+          11,
+          3
+        ]
+      },
+      "word_count": 67,
+      "metadata": {
+        "table_id": 2,
+        "row_count": 11,
+        "column_count": 3,
+        "is_chunked": false
+      }
+    },
+    {
+      "id": "test_business_data.csv_CSV_Data_table_0003",
+      "type": "csv_table",
+      "source_file": "test_business_data.csv",
+      "source_sheet": "CSV_Data",
+      "content": {
+        "columns": [
+          "Department",
+          "Employees",
+          "Revenue_M",
+          "Expenses_M",
+          "Profit_M",
+          "Growth_Rate"
+        ],
+        "data": [
+          {
+            "Department": "Corporate Banking",
+            "Employees": 450,
+            "Revenue_M": 180.5,
+            "Expenses_M": 145.2,
+            "Profit_M": 35.3,
+            "Growth_Rate": "12.5%"
+          },
+          {
+            "Department": "Personal Banking",
+            "Employees": 1200,
+            "Revenue_M": 320.8,
+            "Expenses_M": 285.4,
+            "Profit_M": 35.4,
+            "Growth_Rate": "8.3%"
+          },
+          {
+            "Department": "Wealth Management",
+            "Employees": 280,
+            "Revenue_M": 95.2,
+            "Expenses_M": 67.8,
+            "Profit_M": 27.4,
+            "Growth_Rate": "15.7%"
+          },
+          {
+            "Department": "Investment Banking",
+            "Employees": 180,
+            "Revenue_M": 220.3,
+            "Expenses_M": 165.9,
+            "Profit_M": 54.4,
+            "Growth_Rate": "22.1%"
+          },
+          {
+            "Department": "Digital Services",
+            "Employees": 350,
+            "Revenue_M": 78.9,
+            "Expenses_M": 62.1,
+            "Profit_M": 16.8,
+            "Growth_Rate": "45.2%"
+          },
+          {
+            "Department": "Risk Management",
+            "Employees": 125,
+            "Revenue_M": 0.0,
+            "Expenses_M": 28.5,
+            "Profit_M": -28.5,
+            "Growth_Rate": "0%"
+          },
+          {
+            "Department": "Operations",
+            "Employees": 800,
+            "Revenue_M": 5.2,
+            "Expenses_M": 95.6,
+            "Profit_M": -90.4,
+            "Growth_Rate": "-2.1%"
+          },
+          {
+            "Department": "Technology",
+            "Employees": 420,
+            "Revenue_M": 12.3,
+            "Expenses_M": 156.8,
+            "Profit_M": -144.5,
+            "Growth_Rate": "18.9%"
+          },
+          {
+            "Department": "Human Resources",
+            "Employees": 85,
+            "Revenue_M": 0.0,
+            "Expenses_M": 18.7,
+            "Profit_M": -18.7,
+            "Growth_Rate": "0%"
+          },
+          {
+            "Department": "Marketing",
+            "Employees": 120,
+            "Revenue_M": 2.1,
+            "Expenses_M": 45.3,
+            "Profit_M": -43.2,
+            "Growth_Rate": "25.6%"
+          }
+        ],
+        "shape": [
+          10,
+          6
+        ]
+      },
+      "word_count": 67,
+      "metadata": {
+        "table_id": 3,
+        "row_count": 10,
+        "column_count": 6,
+        "is_chunked": false
+      }
+    }
+  ]
+}

@@ -44,7 +44,7 @@ class IntegratedDiscoverySynthesisInput(BaseModel):
     )
     
     json_file_path: str = Field(
-        default="../Fetch_data/unified_results.json",
+        default="unified_output.json",
         description="Path to the JSON file containing the processed documents"
     )
     
@@ -343,33 +343,50 @@ class IntegratedDiscoverySynthesisTool(BaseTool):
             # Extract all content chunks from the entire JSON
             all_chunks = []
             
-            # Process all items in the JSON
-            for item_key, item_data in full_json_data.items():
-                if isinstance(item_data, dict):
-                    if 'content' in item_data:
-                        # Direct content
-                        all_chunks.append(item_data['content'])
-                    elif 'chunks' in item_data:
-                        # Chunked content
-                        for chunk in item_data['chunks']:
-                            if isinstance(chunk, dict) and 'content' in chunk:
-                                all_chunks.append(chunk['content'])
-                            elif isinstance(chunk, str):
-                                all_chunks.append(chunk)
-                    elif 'data' in item_data:
-                        # Structured data (like Excel)
-                        formatted_content = self._format_structured_data(item_data)
-                        if formatted_content:
-                            all_chunks.append(formatted_content)
+            # Handle unified parser format first
+            if 'unified_data' in full_json_data and isinstance(full_json_data['unified_data'], list):
+                print(f"📦 Processing unified_data format with {len(full_json_data['unified_data'])} items")
+                
+                for item in full_json_data['unified_data']:
+                    if isinstance(item, dict):
+                        item_type = item.get('type', '')
+                        
+                        if item_type == 'pdf_chunk':
+                            # PDF chunk content
+                            content = item.get('content', '')
+                            if content:
+                                all_chunks.append(content)
+                                
+                        elif item_type in ['excel_table', 'csv_table']:
+                            # Excel/CSV table content
+                            formatted_content = self._format_unified_excel_data(item)
+                            if formatted_content:
+                                all_chunks.append(formatted_content)
+            
+            else:
+                # Fallback to old format processing
+                print(f"📦 Processing legacy JSON format")
+                for item_key, item_data in full_json_data.items():
+                    if isinstance(item_data, dict):
+                        if 'content' in item_data:
+                            # Direct content
+                            all_chunks.append(item_data['content'])
+                        elif 'chunks' in item_data:
+                            # Chunked content
+                            for chunk in item_data['chunks']:
+                                if isinstance(chunk, dict) and 'content' in chunk:
+                                    all_chunks.append(chunk['content'])
+                                elif isinstance(chunk, str):
+                                    all_chunks.append(chunk)
+                        elif 'data' in item_data:
+                            # Structured data (like Excel)
+                            formatted_content = self._format_structured_data(item_data)
+                            if formatted_content:
+                                all_chunks.append(formatted_content)
             
             print(f"📦 Extracted {len(all_chunks)} chunks from entire dataset")
             
-            # Apply limit if needed
-            if len(all_chunks) > inputs.max_results:
-                print(f"⚠️  Limiting to {inputs.max_results} chunks due to max_results setting")
-                all_chunks = all_chunks[:inputs.max_results]
-            
-            # Direct synthesis using RefineSynthesisTool
+            # Direct synthesis using RefineSynthesisTool (processes ALL chunks via refine batching)
             if all_chunks:
                 synthesis_result = self.synthesis_tool.refine_synthesis(
                     user_query=inputs.user_query,
@@ -431,6 +448,43 @@ class IntegratedDiscoverySynthesisTool(BaseTool):
                 formatted += f"... and {len(data) - 10} more rows\n"
                 
             return formatted
+        
+        return None
+
+    def _format_unified_excel_data(self, item: Dict) -> str:
+        """Format unified parser Excel/CSV data into readable text for synthesis."""
+        content = item.get('content', {})
+        source_file = item.get('source_file', 'Unknown')
+        source_sheet = item.get('source_sheet', 'Unknown')
+        item_type = item.get('type', 'table')
+        
+        if not content:
+            return None
+            
+        # Handle the unified parser Excel format
+        if 'columns' in content and 'data' in content:
+            columns = content['columns']
+            data = content['data']
+            
+            formatted = f"[{item_type.upper()}] {source_file} - {source_sheet}\n"
+            formatted += f"Columns: {', '.join(columns)}\n\n"
+            
+            # Limit to first 15 rows for synthesis efficiency
+            for i, row in enumerate(data[:15]):
+                formatted += f"Row {i+1}:\n"
+                for col in columns:
+                    value = row.get(col, 'N/A')
+                    formatted += f"  {col}: {value}\n"
+                formatted += "\n"
+            
+            if len(data) > 15:
+                formatted += f"... and {len(data) - 15} more rows\n"
+            
+            return formatted
+        
+        # Handle direct content if it's a string
+        elif isinstance(content, str):
+            return f"[{item_type.upper()}] {source_file} - {source_sheet}\n{content}"
         
         return None
 
@@ -747,7 +801,7 @@ class IntegratedDiscoverySynthesisTool(BaseTool):
         return self._run(**kwargs)
 
 
-def create_integrated_discovery_synthesis_tool(json_file_path: str = "../Fetch_data/unified_results.json") -> IntegratedDiscoverySynthesisTool:
+def create_integrated_discovery_synthesis_tool(json_file_path: str = "unified_output.json") -> IntegratedDiscoverySynthesisTool:
     """
     Factory function to create an IntegratedDiscoverySynthesisTool.
     

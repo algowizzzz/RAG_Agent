@@ -44,8 +44,8 @@ class JSONSearchInput(BaseModel):
     )
     
     json_file_path: str = Field(
-        default="../Fetch_data/unified_results.json",
-        description="Path to the JSON file to search. Default: '../Fetch_data/unified_results.json'"
+        default="unified_output.json",
+        description="Path to the JSON file to search. Default: 'unified_output.json'"
     )
     
     filename: Optional[str] = Field(
@@ -371,7 +371,7 @@ class JSONSearchTool(BaseTool):
         return self._run(**kwargs)
 
 
-def create_json_search_tool(json_file_path: str = "../Fetch_data/unified_results.json") -> JSONSearchTool:
+def create_json_search_tool(json_file_path: str = "unified_output.json") -> JSONSearchTool:
     """
     Factory function to create a JSONSearchTool with a specific JSON file path.
     
